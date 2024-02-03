@@ -1,0 +1,504 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Slab', serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(40deg,midnightblue,purple);
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(12, 12, 12); */
+    background-image: linear-gradient(40deg,midnightblue,purple);
+
+}
+.mainhome{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(12, 12, 12); */
+    background-color: #222222;
+}
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid purple; */
+    font-weight: 600;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10PX;
+    font-size: 2rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+nav li a:hover {
+    border-bottom: 1px solid purple;
+    transition: .2s;
+    color: rgb(255, 0, 255);
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-left: -50px;
+    color: white;
+}
+
+/* main area */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea {
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid purple; */
+}
+
+.textarea .intro {
+    margin-left: 30%;
+    margin-top: 28%;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.intro button {
+    font-size: 2rem;
+    border-radius: 7%;
+    padding: 7px;
+    background-image: linear-gradient(to right, midnightblue, purple);
+    color: azure;
+}
+
+button:hover {
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+    transition: .2s;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+
+.image {
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid purple; */
+    overflow: hidden;
+
+
+}
+
+.image img {
+    width: 80%;
+    height: 160%;
+  filter:drop-shadow(10px 10px 50px rgb(122, 11, 122));
+  
+}
+
+/* about section  */
+.upperhead {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px;
+    color: rgb(214, 9, 255);
+}
+
+.image2 {
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid purple; */
+    overflow: hidden;
+    margin-top: 9%;
+    margin-left: 6%;
+    margin-right: -4%;
+    object-fit: fill;
+
+
+}
+.row {
+      display: flex;
+    }
+    .column {
+      flex: 50%;
+    }
+.myself {
+    font-size: 1.4rem;
+    margin-top: 15%;
+    padding: 30px;
+}
+
+.myself h2 {
+    color: rgb(255, 255, 255);
+}
+
+.myself p {
+    color: rgb(195, 136, 250);
+    margin-top: 10px;
+
+}
+.myself button {
+    font-size: 1.5rem;
+    border-radius: 7%;
+    padding: 7px;
+    background-image: linear-gradient(to right, midnightblue, purple);
+    color: azure;
+}
+
+button:hover {
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+    transition: .2s;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+/* footer  */
+.footer1 {
+    width: 100%;
+    height: 35vh;
+    padding: 50px;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+
+}
+
+.footer h4 {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.footer .logo1 {
+    font-size: 2rem;
+    margin-left: 30px;
+    font-weight: 700;
+
+}
+
+.moto {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid purple; */
+    font-weight: 600;
+
+
+}
+
+.footerbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10PX;
+    font-size: 1rem;
+
+}
+
+.footerbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.footerbar li a:hover {
+    border-bottom: 1px solid purple;
+    transition: .2s;
+    color: rgb(255, 1, 255);
+
+}
+
+.footerbar.logo1 {
+    font-size: 1rem;
+    margin-left: -50px;
+    color: white;
+}
+
+
+
+
+/*  Contact  */
+  .contact {
+        background-image: linear-gradient(40deg,midnightblue,purple);
+  }
+  
+  .contact .title::after {
+    content: "…Get in ToucH….";
+  }
+  
+  .contact .contact-content .column {
+    width: calc(50% - 30px);
+  }
+  
+  .contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .contact .contact-content .left p {
+    text-align: justify;
+  }
+  
+  .contact .contact-content .left .icons {
+    margin: 10px 0;
+  }
+  
+  .contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+  }
+  
+  .contact .contact-content .row .info {
+    margin-left: 30px;
+  }
+  
+  .contact .contact-content .row i {
+    font-size: 25px;
+    color: white;
+  }
+  
+  .contact .contact-content .info .head {
+    font-weight: 500;
+    color: white;
+  }
+  
+  .contact .contact-content .info .sub-title {
+    color: black;
+  }
+  
+  .contact .right form .fields {
+    display: flex;
+  }
+  
+  .contact .right form .field,
+  .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+  }
+  
+  .contact .right form .name {
+    margin-right: 10px;
+  }
+  
+  .contact .right form .field input,
+  .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .contact .right form .field input:focus,
+  .contact .right form .textarea textarea:focus {
+    border-color: white;
+  }
+  
+  .contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+  }
+  
+  .contact .right form .button-area {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right form .button-area button {
+    color: white;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #1e3551;
+    border: 2px solid #1e3551;
+    transition: all 0.3s ease;
+  }
+  
+  .right form .button-area button:hover {
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+  }
+
+
+
+
+
+
+
+/*  Social  */
+  .col-4 {
+    background: #d8d8d8;
+  }
+
+
+.socialmedia {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.socialmedia i {
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+}
+
+.socialmedia i:hover {
+    color: #ff0000;
+    font-size: 1.6rem;
+    transition: .2s;
+    text-shadow: 0px 3px 20px rgb(229, 255, 0);
+    cursor: pointer;
+
+
+}
+.container { 
+text-align: center; padding: 10px; } 
+.skill 
+{
+ display: inline-block; margin: 10px; text-align: center; } 
+.skill img { 
+width: 100px; height: 100px; }
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .social-menu ul li .fa {
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #000;
+  }
+  
+  .social-menu ul li .fa:hover {
+    color: #fff;
+  }
+  
+  .social-menu ul li a {
+    left: px;
+    right: 12px;
+    padding-top: 3px;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1e3551;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social-menu ul li a:hover {
+    transform: translate(0, -10px);
+  }
+  
+  .social-menu ul li:nth-child(1) a:hover {
+    background-color: #131418;
+  }
+  
+  .social-menu ul li:nth-child(2) a:hover {
+    background-color: #0a66c2;
+  }
+  
+  .social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+  }
+  .social-menu ul li:nth-child(4) a:hover {
+    background-color: #1da1f2;
+  }
+  
+  .social-menu ul li:nth-child(5) a:hover {
+    background-color: #e33054;
+  }
+  
+  .social-menu ul li:nth-child(6) a:hover {
+    background-color: #fc4f08;
+  }
+  
+  .fa-brands {
+    color: #fff;
+  }
+  
+  .fa-solid {
+    color: #fff;
+  }
+  
+  /*  Footer  */
+  footer {
+    background: #111;
+    padding: 6px 16px;
+    color: #888c8d;
+    text-align: center;
+  }
+  
+  footer span a {
+    color: #1e3551;
+    text-decoration: none;
+  }
+  
+  footer span a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
