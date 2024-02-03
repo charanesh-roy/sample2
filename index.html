@@ -176,6 +176,50 @@
     <h1 class="counter">Welcome to My Website!</h1>
   <p class="counter">This website has been visited:</p>
   <p class="counter" id="visit-count">0</p>
+    <!-- Testimonials Container -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Testimonial Slides -->
+        <div class="swiper-slide">
+            <div class="testimonial">
+                <p>This is the first testimonial text.</p>
+                <p class="author">- John Doe</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonial">
+                <p>This is the second testimonial text.</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
     <footer class="main footer1">
         <div class="footer">
             <span class="logo1">Charanesh</span><br>
