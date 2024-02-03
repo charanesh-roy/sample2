@@ -2,7 +2,54 @@
 <html lang="en">
 
 <head>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script >
+        document.addEventListener("DOMContentLoaded", function () {
+  // Sample testimonial data (you can replace this with real data from your backend)
+  const testimonialsData = [
+      {
+          name: "charan",
+          occupation: "CEO, XYZ Company",
+          testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          
+      },
+      {
+        name: "shankar",
+        occupation: "CEO, XYZ Company",
+        testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        
+    },
+      {
+          name: "eveen",
+          occupation: "Marketing Manager, ABC Inc.",
+          testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          
+      }
+  ];
+
+  // Function to dynamically populate testimonials
+  function renderTestimonials() {
+      const testimonialContainer = document.getElementById("testimonialContainer");
+
+      testimonialsData.forEach(testimonial => {
+          const testimonialDiv = document.createElement("div");
+          testimonialDiv.classList.add("testimonial");
+
+          testimonialDiv.innerHTML = `
+              <img src="${testimonial.image}" alt="${testimonial.name}">
+              <div>
+                  <p>${testimonial.testimonial}</p>
+                  <cite>${testimonial.name}, <span>${testimonial.occupation}</span></cite>
+              </div>
+          `;
+
+          testimonialContainer.appendChild(testimonialDiv);
+      });
+  }
+
+  // Call the function to render testimonials
+  renderTestimonials();
+});
+    </script>
     <script>
          function updateVisitCount() {
       let count = localStorage.getItem('visitCount') || 0;
@@ -178,48 +225,11 @@
   <p class="counter">This website has been visited:</p>
   <p class="counter" id="visit-count">0</p>
     <!-- Testimonials Container -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <!-- Testimonial Slides -->
-        <div class="swiper-slide">
-            <div class="testimonial">
-                <p>This is the first testimonial text.</p>
-                <p class="author">- John Doe</p>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="testimonial">
-                <p>This is the second testimonial text.</p>
-                <p class="author">- Jane Smith</p>
-            </div>
-        </div>
-        <!-- Add more slides as needed -->
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
-
-<!-- Swiper JS -->
-
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
+<div class="cont">
+   <h1><center>Testimonials</center></h1>
+  <div class="testimonial-container" id="testimonialContainer">
+    <!-- Testimonials will be dynamically added here using JavaScript -->
+</div></div>
 
     <footer class="main footer1">
         <div class="footer">
