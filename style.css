@@ -178,6 +178,15 @@ button:hover {
     font-size: 1.9rem;
     cursor: pointer;
 }
+ .counter{
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #visit-count {
+      font-size: 24px;
+      font-weight: bold;
+    }
 /* footer  */
 .footer1 {
     width: 100%;
@@ -252,7 +261,7 @@ nav {
   }
   
   .contact .title::after {
-    content: "…Get in ToucH….";
+    content: "â€¦Get in ToucHâ€¦.";
   }
   
   .contact .contact-content .column {
